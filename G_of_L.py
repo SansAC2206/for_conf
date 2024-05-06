@@ -96,6 +96,10 @@ while running:
             if event.key == K_SPACE:
                 game_of_life_run = True
 
+            if event.key == K_q:
+                running = False
+                quit()
+
         if event.type == KEYDOWN:
             if event.key == K_g and event.key == K_d:
                 mouse = pygame.mouse.get_pos()
@@ -171,6 +175,10 @@ while running:
 
                 if event.key == K_s:
                     game_of_life_run = False
+
+                if event.key == K_q:
+                    running = False
+                    quit()
 
             if event.type == MOUSEBUTTONDOWN:
                 if event.button == 1:
